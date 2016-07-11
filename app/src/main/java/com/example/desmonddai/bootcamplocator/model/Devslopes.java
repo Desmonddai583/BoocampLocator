@@ -5,11 +5,17 @@ package com.example.desmonddai.bootcamplocator.model;
  */
 public class Devslopes {
 
+    final String DRAWABLE = "drawable/";
+
     private float longitude;
     private float latitude;
     private String locationTitle;
     private String locationAddress;
     private String locationImgUrl;
+
+    public String getImgUrl() {
+        return DRAWABLE + locationImgUrl;
+    }
 
     public float getLongitude() {
         return longitude;
